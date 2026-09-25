@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Toàn bộ trang */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: #555;
+    padding: 15px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.nav a:hover {
+    background-color: #777;
+}
+
+/* Content + Sidebar */
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+/* Nội dung chính */
+.content {
+    flex: 3;
+    padding: 25px;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+}
+
+.content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav a {
+        display: block;
+    }
+}
