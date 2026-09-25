@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin: 20px 0;
+}
+
+/* Flex container */
+.container {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+
+    background-color: #eee;
+    border: 2px solid #333;
+}
+
+/* Các flex item */
+.item {
+    flex-grow: 1;
+
+    padding: 30px 10px;
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Div thứ 2 phát triển lớn hơn */
+.grow {
+    flex-grow: 3;
+    background-color: lightcoral;
+}
