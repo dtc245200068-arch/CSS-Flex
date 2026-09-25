@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+/* Flex container */
+.container {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    border: 2px solid #333;
+    background-color: #eee;
+}
+
+/* Flex item */
+.item {
+    width: 150px;
+    min-width: 150px;
+    padding: 25px 10px;
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+/* Ví dụ 1 */
+.row-nowrap {
+    flex-flow: row nowrap;
+}
+
+/* Ví dụ 2 */
+.row-reverse {
+    flex-flow: row-reverse nowrap;
+}
