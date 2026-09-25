@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border: 2px solid #333;
+    background-color: #eee;
+}
+
+.item {
+    padding: 20px;
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Ví dụ number */
+.item1 {
+    flex-basis: 100px;
+}
+
+.item2 {
+    flex-basis: 200px;
+}
+
+.item3 {
+    flex-basis: 300px;
+}
+
+/* Giá trị auto */
+.auto {
+    flex-basis: auto;
+}
+
+/* Giá trị initial */
+.initial {
+    flex-basis: initial;
+}
+
+/* Phần tử cha */
+.parent {
+    display: flex;
+    flex-basis: 250px;
+}
+
+/* Kế thừa giá trị từ phần tử cha */
+.inherit {
+    flex-basis: inherit;
+}
